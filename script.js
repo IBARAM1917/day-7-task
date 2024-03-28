@@ -21,6 +21,7 @@ reste.onload=function(){
     let rese =resulte.filter((ele)=>ele.population<200000);
     let finale=rese.forEach((ele)=>console.log(ele.name.common));
 }
+
 //Print the following details name, capital, flag, using forEach function
 const rested=new XMLHttpRequest();
 rested.open("GET","https://restcountries.com/v3.1/all",true);
@@ -47,6 +48,7 @@ request.onload=function(){
         return acc+curr.population;
     },0);
   console.log(total);
+}
 
 //Print the country that uses US dollars as currency.
 var requests = new XMLHttpRequest();
